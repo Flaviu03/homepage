@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="peepo-dj.gif">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="user-greeting">
+                <span id="time-greeting"></span> The time is:
+            </div>
+            <div id="current-time">
+                <span id="current-time-text"></span></h1>
+            </div>
+            <div id="search">
+                <div id="search-engine-cont">
+                    <select name="search-engine" class="button" id="search-engine-select">
+                        <option value="Google" selected="selected">Google</option>
+			            <option value="TJ's SearXNG Instance">TJ's SearXNG Instance</option>
+                        <option value="TJ's LibreX Instance">TJ's LibreX Instance</option>
+                        <option value="DuckDuckGo">DuckDuckGo</option>
+                    </select>
+                </div>
+                <div id="search-input-cont">
+                    <input id="search-input" placeholder="Enter search term here" autofocus/>
+                </div>
+                <div id="search-button-cont">
+                    <button class="button" id="search-button" onclick="doSearch()">Search</button>
+                </div>
+            </div>
+            <div id="links">
+                <div class="link-group" id="general">
+                    <ul>
+                        <li class="link-group-title">General</li>
+                        <li><a href="https://mail.google.com/mail"><span class="link-text">Gmail</span></a></li>
+                        <li><a href="https://drive.google.com/drive/"><span class="link-text">Drive</span></a></li>
+                        <li><a href="https://outlook.live.com/mail/"><span class="link-text">Outlook</span></a></li>
+                        <li><a href="https://www.amazon.es/"><span class="link-text">Amazon</span></a></li>
+                    </ul>
+                </div>
+                <div class="link-group" id="development">
+                    <ul>
+                        <li class="link-group-title">Development</li>
+                        <li><a href="https://chat.openai.com"><span class="link-text">Chat GPT</span></a></li>
+                        <li><a href="localhost:5500"><span class="link-text">localhost</span></a></li>
+                        <li><a href="https://github.com"><span class="link-text">GitHub</span></a></li>
+                        <li><a href="https://gitlab.com"><span class="link-text">GitLab</span></a></li>
+                    </ul>
+                </div>
+                <div class="link-group" id="media">
+                    <ul>
+                        <li class="link-group-title">Media</li>
+                        <li><a href="https://www.youtube.com/"><span class="link-text">Youtube</span></a></li>
+                        <li><a href="https://twitch.tv"><span class="link-text">Twitch</span></a></li>
+                        <li><a href="https://www.disneyplus.com/en-es"><span class="link-text">Disney</span></a></li>
+                        <li><a href="https://www.netflix.com/es-en/"><span class="link-text">Netflix</span></a></li>
+                    </ul>
+                </div>
+                <div class="link-group" id="socials">
+                    <ul>
+                        <li class="link-group-title">Socials</li>
+                        <li><a href="https://www.twitter.com/"><span class="link-text">Twitter</span></a></li>
+                        <li><a href="https://www.instagram.com/"><span class="link-text">Instagram</span></a></li>
+                        <li><a href="https://www.reddit.com/"><span class="link-text">Reddit</span></a></li>
+                        <li><a href="https://web.whatsapp.com"><span class="link-text">WhatsApp Web</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <input type="color" id="color-picker" style="display:none;">        
+    </body>
+    <script src="index.js"></script>
+</html>
